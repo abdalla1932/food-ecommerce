@@ -1,0 +1,43 @@
+<header class="mb-5">
+
+    <div class="main">
+
+        <div class="layer">
+
+            <div class="container ">
+                <h1 class="cw my-5 foodie">Foodie</h1>
+                <h2 class="cw mt-3 maFont ">Not Just Food </h2>
+                <h2 class="cb mb-3 maFont">Its Art</h2>
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
+
+
+<section class="m-5 mt-5">
+     
+    <h2 class="text-center my-5 title">New Products</h2>
+    
+    <owl-carousel-o [options]="customOptions" class="text-center">
+      <ng-template *ngFor="let item of allItems"  carouselSlide>
+          <div class="myItem ">
+            <img [src]="item.image" class="rounded-circle my-3" alt="">
+            <p class="my-3 lead  ">{{item.title}}</p>
+            <h6 class="my-3">{{item.price}}$</h6>
+            <button (click)="addToCard(item)" class="btn my-3">Add Cart</button>
+            <div class="demo"><span >New</span></div>
+          </div>
+        </ng-template>
+       
+
+        
+    </owl-carousel-o>
+    
+
+</section>
+

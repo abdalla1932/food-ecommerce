@@ -1,0 +1,66 @@
+<header class="mb-5">
+
+    <div class="main">
+
+        <div class="layer">
+
+            <div class="container ">
+                <h1 class=" my-5 foodie">Foodie</h1>
+                <h2 class="cw mt-3 ">Rain or shine </h2>
+                <h2 class="cb mb-3">it’s time to dine</h2>
+
+                
+
+            </div>
+
+        </div>
+
+    </div>
+</header>
+
+
+
+<section class="my-5">
+
+    <h2 class="text-center my-5 title">our Products</h2>
+
+    <div class="container">
+        <div class="row">
+
+           <div class="col-md-3">
+               <div class="box">
+                <ul class="links text-center">
+                  <li><h6 class="title">Categories</h6></li>
+                  <li><a (click)='getCategory("Chicken Paste")'>Chicken Paste</a></li>
+                  <li><a (click)="getCategory('Penne Ala Vodka')">Penne Ala Vodka</a></li>
+                  <li><a (click)="getCategory('Spaghetti Bolognese')">Spaghetti Bolognese</a></li>
+                  <li><a (click)='getCategory("Ravioli with Coconut Milk")'>Ravioli with Coconut Milk</a></li>
+                  <li><a (click)='getCategory("Home-Style Baked Pasta")'>Home-Style Baked Pasta</a></li>
+                  <li><a (click)='getCategory("Pasta Con Pomodoro E Basilico")'>Pasta Con Pomodoro E Basilico</a></li>
+                  <li><a (click)='getCategory("Gnocchi with Tomato Sauce")'>Gnocchi with Tomato Sauce</a></li>
+                  <li><a (click)='getCategory("Pasta Carbonara")'>Pasta Carbonara</a></li>
+                  <li><a (click)='getCategory("Four Cheese Pasta")'>Four Cheese Pasta</a></li>
+                   
+                </ul>
+              </div>
+           </div>
+
+           <div class="col-md-1"></div>
+
+           <div class="col-md-8">
+               <div class="row">
+                   <div *ngFor="let item of allItems" class="col-md-4 unit">
+                    <div class="myItem text-center ">
+                        <img [src]="item.image" class="rounded-circle w-100 my-3" alt="">
+                        <p class="my-3 lead  ">{{item.title}}</p>
+                        <h6 class="my-3">{{item.price}}$</h6>
+                        <button (click)="addToCard(item)" class="btn my-3">Add Cart</button>
+                        
+                      </div>
+                   </div>
+               </div>
+           </div>
+
+        </div>
+    </div>
+</section>

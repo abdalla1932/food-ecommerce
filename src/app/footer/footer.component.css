@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;700;900&family=Hurricane&family=Montserrat&family=Pacifico&display=swap');
+
+.footer
+{
+    background-color: #89ABE3FF;
+    height: 60vh;
+}
+
+@media (max-width:991px) {
+    .footer{
+       height: 40vh;
+        
+    }
+}
+
+.title
+{
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Hurricane', cursive;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Pacifico', cursive;
+
+    color: #FCF6F5FF;
+}
+
+ul , a
+{
+    text-decoration: none;
+    list-style: none;
+}
+
+ .box .links li 
+{
+    padding: 20px 0;
+    
+}
+
+.box .social li
+{
+    padding: 10px 0;
+}
+
+ .box .links li:not(:last-child)
+{
+    border-bottom: 1px solid #FCF6F5FF;
+}
+
+
+.box .links a::before
+{
+    font-family: "Font Awesome 5 Free";
+    content: "\F101";
+    font-weight: 900;
+    color: #FCF6F5FF;
+    margin-right: 10px;
+}
+
+.box .links a
+{
+    color: #FCF6F5FF;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    transition: 0.5s;
+}
+
+.box .links a:hover
+{
+    color: white;
+    padding-left:10px ;
+}
+
+.social li
+{
+  font-size: 20px;
+  
+}
+
+.social i
+{
+    border: 1px solid #FCF6F5FF;
+    padding: 10px;
+    border-radius: 50%;
+}
+
+.social i:hover
+{
+    background-color: #FCF6F5FF;
+    color:#89ABE3FF;
+    transition: 0.5s;
+}
+
+.fake
+{
+    font-size: small;
+    color: #FCF6F5FF;
+    margin-left: 5px;
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.right
+{
+    height: 15vh;
+    background-color: #201e20;
+}
+
+.owner{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.owner h5
+{
+    color:  #89ABE3FF;;
+    margin-left: 5px;
+}
+
+.owner span{
+  
+    font-weight: bold;
+}
+
+
+@media (max-width:991px) {
+    .footer .container .head{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media (max-width:991px) {
+    .footer .container .box{
+        display: none;
+        
+    }
+}
+
+@media (max-width:991px) {
+    .owner{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        
+    }
+}
